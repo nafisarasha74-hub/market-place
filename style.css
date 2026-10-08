@@ -1,0 +1,163 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #172b4d;
+  background: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  padding: 2rem max(1.25rem, calc((100% - 1040px) / 2));
+  color: #fff;
+  background: #173b67;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+header p {
+  margin: 0.35rem 0 1.25rem;
+  color: #d7e6f7;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+main {
+  width: min(1040px, calc(100% - 2.5rem));
+  margin: 2.5rem auto;
+}
+
+section {
+  margin-block: 0 3rem;
+}
+
+section > h2 {
+  margin-bottom: 1.25rem;
+  font-size: 1.75rem;
+}
+
+.tutor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 1rem;
+}
+
+article,
+form {
+  padding: 1.25rem;
+  border: 1px solid #dce4ee;
+  border-radius: 0.75rem;
+  background: #fff;
+  box-shadow: 0 4px 14px rgb(23 59 103 / 6%);
+}
+
+article h3 {
+  margin: 0 0 0.5rem;
+  color: #173b67;
+}
+
+article p {
+  margin: 0.4rem 0;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.form-field.full-width,
+form button {
+  grid-column: 1 / -1;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid #aebdce;
+  border-radius: 0.4rem;
+  font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #9bc5f3;
+  outline-offset: 1px;
+}
+
+textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+form button {
+  justify-self: start;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+  border-radius: 0.4rem;
+  color: #fff;
+  background: #1769aa;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0e527f;
+}
+
+footer {
+  padding: 1.5rem max(1.25rem, calc((100% - 1040px) / 2));
+  color: #e4edf8;
+  background: #102b4b;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+}

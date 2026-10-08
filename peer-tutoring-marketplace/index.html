@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find a peer tutor and request a one-on-one learning session.">
+  <title>PeerPath | Peer Tutoring Marketplace</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>PeerPath</h1>
+    <p>Learn from fellow students and make your next breakthrough together.</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#tutors">Find a tutor</a></li>
+        <li><a href="#booking">Request a session</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tutors" aria-labelledby="tutors-heading">
+      <h2 id="tutors-heading">Meet our peer tutors</h2>
+      <div class="tutor-list">
+        <article>
+          <h3>Maya Chen</h3>
+          <p><strong>Subject:</strong> Mathematics</p>
+          <p><strong>Rate:</strong> $18 per hour</p>
+          <p>Maya makes algebra and calculus easier with clear, step-by-step explanations.</p>
+        </article>
+        <article>
+          <h3>Jordan Patel</h3>
+          <p><strong>Subject:</strong> Biology</p>
+          <p><strong>Rate:</strong> $16 per hour</p>
+          <p>Review cell biology and genetics with an encouraging science major.</p>
+        </article>
+        <article>
+          <h3>Amara Okafor</h3>
+          <p><strong>Subject:</strong> English</p>
+          <p><strong>Rate:</strong> $15 per hour</p>
+          <p>Build confidence in essay writing, reading comprehension, and revision.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="booking" aria-labelledby="booking-heading">
+      <h2 id="booking-heading">Request a tutoring session</h2>
+      <form action="#" method="get">
+        <div class="form-field">
+          <label for="student-name">Your name</label>
+          <input id="student-name" name="student-name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="student-email">Email address</label>
+          <input id="student-email" name="student-email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="">Choose a subject</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="biology">Biology</option>
+            <option value="english">English</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="session-date">Preferred date</label>
+          <input id="session-date" name="session-date" type="date" required>
+        </div>
+        <div class="form-field full-width">
+          <label for="message">What would you like help with?</label>
+          <textarea id="message" name="message" rows="4" placeholder="Share a topic or learning goal"></textarea>
+        </div>
+        <button type="submit">Send session request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>&copy; 2026 PeerPath. All rights reserved.</p>
+    <p>Questions? Email <a href="mailto:hello@peerpath.example">hello@peerpath.example</a>.</p>
+  </footer>
+</body>
+</html>
