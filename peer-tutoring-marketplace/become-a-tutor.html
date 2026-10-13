@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Share what you know and apply to become a PeerPath tutor.">
+  <title>Become a Tutor | PeerPath</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>PeerPath</h1>
+    <p>Learn from fellow students and make your next breakthrough together.</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutor.html">Tutor profile</a></li>
+        <li><a href="become-a-tutor.html" aria-current="page">Become a tutor</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Teach what you know</h2>
+      <p>Help fellow students reach their goals while gaining valuable teaching experience. PeerPath tutors share their strengths, set a fair hourly rate, and make learning more welcoming for everyone.</p>
+      <h3>As a PeerPath tutor, you can:</h3>
+      <ul>
+        <li>Support students in subjects you know well.</li>
+        <li>Build communication and mentoring experience.</li>
+        <li>Arrange sessions around your schedule.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="registration-heading">
+      <h2 id="registration-heading">Tutor registration</h2>
+      <form action="#" method="get">
+        <div class="form-field">
+          <label for="tutor-name">Your name</label>
+          <input id="tutor-name" name="tutor-name" type="text" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="tutor-email">Email address</label>
+          <input id="tutor-email" name="tutor-email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="tutor-subject">Subject you want to teach</label>
+          <input id="tutor-subject" name="tutor-subject" type="text" required>
+        </div>
+        <div class="form-field">
+          <label for="tutor-rate">Hourly rate (USD)</label>
+          <input id="tutor-rate" name="tutor-rate" type="number" min="1" step="1" required>
+        </div>
+        <div class="form-field full-width">
+          <label for="tutor-bio">Tell us about your experience</label>
+          <textarea id="tutor-bio" name="tutor-bio" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit tutor application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 PeerPath. All rights reserved.</p>
+    <p>Questions? Email <a href="mailto:hello@peerpath.example">hello@peerpath.example</a>.</p>
+  </footer>
+</body>
+</html>
